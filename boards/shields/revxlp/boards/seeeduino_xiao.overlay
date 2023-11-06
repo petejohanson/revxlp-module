@@ -1,0 +1,39 @@
+#include <dt-bindings/pinctrl/samd21-da1eXabcd-pinctrl.h>
+#include <dt-bindings/pwm/pwm.h>
+
+// &backlight { status = "disabled"; };
+// 
+// &pinctrl {
+// 	pwm_backlight: pwm_backlight {
+// 		group1 {
+// 			pinmux = <PB9F_TCC3_WO7>;
+// 		};
+// 	};
+// };
+// 
+// / {
+// 
+// 	chosen {
+// 		zmk,backlight = &pwm_leds;
+// 	};
+// 
+// 	pwm_leds: pwm_leds {
+// 		compatible = "pwm-leds";
+// 		pwm_led0: pwm_led_0 {
+// 			status = "okay";
+// 			pwms = <&tcc3 0 PWM_MSEC(20)>;
+// 			label = "PWM_LED";
+// 		};
+// 	};
+// };
+// 
+// &tcc3 {
+// 	status = "okay";
+// 	compatible = "atmel,sam0-tcc-pwm";
+// 	/* Gives a maximum period of 1.4 s */
+// 	prescaler = <4>;
+// 	#pwm-cells = <2>;
+// 
+// 	pinctrl-0 = <&pwm_backlight>;
+// 	pinctrl-names = "default";
+// };

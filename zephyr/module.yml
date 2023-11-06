@@ -1,0 +1,4 @@
+name: blank-slate
+build:
+  settings:
+    board_root: .
