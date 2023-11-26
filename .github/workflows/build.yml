@@ -1,0 +1,5 @@
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  build:
+    uses: petejohanson/zmk/.github/workflows/build-user-config.yml@build/zephyr-module-keymap-loading-refactor
